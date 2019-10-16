@@ -19,6 +19,8 @@ class DiaryTagTableSeeder extends Seeder
                 [
                     'diary_id' => rand(1, 10),
                     'tag_id' => rand(1, 20),
+                    // 下記、後から追加
+                    'like_flag' => rand(0, 1),
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
