@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('diaries', 'DiaryController');
+Route::resource('diaries/{diary}/tags', 'TagController');
