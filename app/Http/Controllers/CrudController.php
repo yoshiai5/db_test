@@ -49,7 +49,19 @@ class CrudController extends Controller
      */
     public function show(Crud $crud)
     {
-        return view('curds.show', compact('crud'));
+        return view('cruds.show', compact('crud'));
+    }
+
+    /**
+     * [list description]
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function list()
+    {
+        $cruds = Crud::isNotGet();
+
+        return view('cruds.list', compact('cruds'));
     }
 
     /**

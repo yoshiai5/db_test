@@ -38,14 +38,14 @@ class CrudTableSeeder extends Seeder
             [
                 'function' => 'show',
                 'ja_name' => '詳細',
-                'is_not_get' => 1,
+                'is_not_get' => 0,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
             ],
             [
                 'function' => 'edit',
                 'ja_name' => '編集',
-                'is_not_get' => 1,
+                'is_not_get' => 0,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
             ],

@@ -10,5 +10,4 @@ class Crud extends Model
     {
         return self::where('is_not_get', 1)->get();
     }
-    //
 }
