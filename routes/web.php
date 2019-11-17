@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::resource('diaries', 'DiaryController');
 Route::resource('diaries/{diary}/tags', 'TagController');
+Route::resource('/cruds', 'CrudController');
