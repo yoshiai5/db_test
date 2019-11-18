@@ -19,3 +19,4 @@ Route::resource('/diaries', 'DiaryController');
 Route::resource('/diaries/{diary}/tags', 'TagController');
 Route::resource('/cruds', 'CrudController');
 Route::get('/curds/list', 'CrudController@list')->name('cruds.list');
+Route::resource('/categories', 'CategoryController');

@@ -12,4 +12,14 @@ class Account extends Model
     {
         return $this->hasMany('App\Models\Diary');
     }
+
+    public function categories()
+    {
+        return $this->belongsToMany('App\Category');
+    }
+
+    public function parentCategories()
+    {
+        return $this->belongsToMany('App\Category');
+    }
 }
