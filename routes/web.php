@@ -20,3 +20,7 @@ Route::resource('/diaries/{diary}/tags', 'TagController');
 Route::resource('/cruds', 'CrudController');
 Route::get('/curds/list', 'CrudController@list')->name('cruds.list');
 Route::resource('/categories', 'CategoryController');
+
+
+// laravel 青い本を動かして理解エリア
+Route::get('/only', 'OnlyController');
